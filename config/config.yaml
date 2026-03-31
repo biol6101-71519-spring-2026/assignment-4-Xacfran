@@ -1,0 +1,36 @@
+# Sample info
+sample_name: "hpylori"
+organism: "Helicobacter pylori"
+expected_genome_size: "1670000" # in bp
+
+# Input reads Illumina paired-end short reads
+reads_r1: "data/raw_reads/illumina_R1.fastq.gz"
+reads_r2: "data/raw_reads/illumina_R2.fastq.gz"
+
+# PacBio long reads
+long_reads: "data/raw_reads/pacbio.fastq.gz"
+
+# BUSCO
+busco_lineage: "campylobacterales_odb10"
+
+#  Preprocessing
+fastp:
+  qualified_quality_phred: 20
+  length_required: 50
+  cut_front: true
+  cut_tail: true
+
+filtlong:
+  min_length: 1000
+  keep_percent: 90
+
+# Assembly SPADES
+assembly:
+  threads: 8
+  memory_gb: 16
+
+# Threads for each software to avoid  jobs being killed
+threads:
+  small: 2       # FastQC
+  medium: 4      # fastp, filtlong, QUAST
+  large: 8       # SPAdes, BUSCO

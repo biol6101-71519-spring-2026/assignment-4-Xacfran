@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.12
+  - busco=6.0.0
+  - r-base
+  - r-ggplot2
+  - pandas
