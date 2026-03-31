@@ -6,9 +6,8 @@
 results/
 logs/
 
-# Data files (too large for git)
-data/
-
+# Data files
+data/raw_reads
 
 # Python
 __pycache__/
@@ -19,12 +18,6 @@ __pycache__/
 env/
 venv/
 *.egg-info/
-
-# R
-.Rhistory
-.RData
-.Rproj.user
-*.Rproj
 
 # Conda environments created by Snakemake (cached)
 .snakemake/conda/

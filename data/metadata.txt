@@ -1,0 +1,17 @@
+Organism: Helicobacter pylori
+Strain: Reference 26695
+Expected Genome: ~1.67 Mb (single circular chromosome)
+Reference Genome: NC_000915.1
+
+# Illumina and PacBio data come from different projects but they both are from strain 26695
+# Illumina short reads
+Platform: Illumina HiSeq 2000
+Read Type: Paired-end
+SRA Accession: SRR2146075
+
+# PacBio long reads
+Platform: PacBio RS II
+Read Type: Single-end subreads
+SRA Accession: SRR4430512, BioProject PRJNA349024
+
+
